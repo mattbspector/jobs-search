@@ -1,9 +1,11 @@
 import React from 'react';
-import './css/main.css';
+import '../css/main.css';
 
 function App() {
   return (
-    <div className="App"></div>
+    <div className="App Bgc(red)">
+    hey
+    </div>
   );
 }
 
