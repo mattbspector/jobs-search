@@ -1,3 +1,6 @@
+
+'use strict';
+
 let atomizerConfig = {
     options: {
         namespace: null,
@@ -6,35 +9,40 @@ let atomizerConfig = {
     },
     files: [
         {
-            src: ['src/components/*.js'],
+            src: ['src/**/*.js'],
             dest: 'src/css/main.css'
         }
     ]
 };
 
 module.exports = function(grunt) {
+    // Define the configuration for all the tasks
     grunt.config.merge({
         project: {
-            src: './src'
+            src: './src',
+            dist: './dist'
         },
         watch: {
             dev: {
                 options: {
                     livereload: true
                 },
-                files: ['configs/atomizer-custom.json', 'src/components/*.js'],
+                files: ['configs/atomizer-custom.json', 'src/**/*.js'],
                 tasks: ['atomizer']
             }
         },
+
         atomizer: {
             dev: atomizerConfig,
             dist: atomizerConfig
         },
+
         shell: {
             'react-scripts-start': {
                 command: 'react-scripts start'
             }
         },
+
         concurrent: {
             dev: {
                 tasks: ['watch', 'shell:react-scripts-start'],
