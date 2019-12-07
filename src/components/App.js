@@ -142,11 +142,11 @@ export default function SimpleTable() {
           <div className="D(f) Ai(c)">
             <span className="Pend(5px)">
             <img className="Bdrs(50%)" src='/treydon.png' height='30px'/></span>
-          //   <div>
-          //   Welcome <span className="Pstart(5px) C(blue)">Treyden!</span>
-          //   </div>
-          // </div>
-          // <div className="Pt(5px)">Daily Progress: {dailyJobs} / 10 Jobs</div>
+            <div>
+            Welcome <span className="Pstart(5px) C(blue)">Treyden!</span>
+            </div>
+          </div>
+          <div className="Pt(5px)">Daily Progress: {dailyJobs} / 10 Jobs</div>
         </div>
       </div>
       <div className="W(100%) Ovx(auto) D(f)">
