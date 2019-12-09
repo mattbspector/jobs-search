@@ -1,7 +1,6 @@
 
 'use strict';
 
-
 let atomizerConfig = {
     options: {
         namespace: null,
@@ -10,7 +9,7 @@ let atomizerConfig = {
     },
     files: [
         {
-            src: ['src/**/*.js'],
+            src: ['configs/atomizer-custom.json', 'src/**/*.js'],
             dest: 'src/css/main.css'
         }
     ]
@@ -19,12 +18,6 @@ let atomizerConfig = {
 module.exports = function(grunt) {
     // Define the configuration for all the tasks
     grunt.config.merge({
-        'gh-pages': {
-          options: {
-            base: 'dist'
-          },
-          src: ['**']
-        },
         project: {
             src: './src',
             dist: './dist'
@@ -59,8 +52,6 @@ module.exports = function(grunt) {
             }
         }
     });
-
-    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-concurrent');
