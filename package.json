@@ -1,5 +1,6 @@
 {
   "homepage": "http://mattbspector.github.io/jobs-search",
+  "site_url": "https://mattbspector.github.io/jobs-search/",
   "name": "jobs-search",
   "version": "0.1.0",
   "private": true,

@@ -136,12 +136,12 @@ export default function SimpleTable() {
         <Overlay data={overlayData} closeOverlay={toggleOverlay} /> : null
       }
       <div className="P(20px) D(f) Jc(sb)">
-        <img height="32px" src="/Lambda_Logo_red_small.png" />
+        <img height="32px" src="Lambda_Logo_red_small.png" />
         <div className="Fz(30px)">Harvest</div>
         <div className="Va(m) Ta(s)">
           <div className="D(f) Ai(c)">
             <span className="Pend(5px)">
-            <img className="Bdrs(50%)" src='/treydon.png' height='30px'/></span>
+            <img className="Bdrs(50%)" src='treydon.png' height='30px'/></span>
             <div>
             Welcome <span className="Pstart(5px) C(blue)">Treyden!</span>
             </div>
